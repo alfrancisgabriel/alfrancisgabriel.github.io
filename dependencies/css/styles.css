@@ -24,7 +24,7 @@
 	--white: #fff;
 	--gray: #6c757d;
 	--gray-dark: #343a40;
-	--primary: #64a19d;
+	--primary: #20c997;
 	--secondary: #6c757d;
 	--success: #28a745;
 	--info: #17a2b8;
@@ -179,12 +179,12 @@ sup {
 }
 
 a {
-	color: #64a19d;
+	color: #20c997;
 	text-decoration: none;
 	background-color: transparent;
 }
 a:hover {
-	color: #467370;
+	color: #148560;
 	text-decoration: underline;
 }
 
@@ -2664,38 +2664,38 @@ fieldset:disabled a.btn {
 
 .btn-primary {
 	color: #fff;
-	background-color: #64a19d;
-	border-color: #64a19d;
+	background-color: #20c997;
+	border-color: #20c997;
 }
 .btn-primary:hover {
 	color: #fff;
-	background-color: #548b87;
-	border-color: #4f837f;
+	background-color: #148560;
+	border-color: #148560;
 }
 .btn-primary:focus,
 .btn-primary.focus {
 	color: #fff;
-	background-color: #548b87;
-	border-color: #4f837f;
-	box-shadow: 0 0 0 0.2rem rgba(123, 175, 172, 0.5);
+	background-color: #148560;
+	border-color: #148560;
+	box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.5);
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
 	color: #fff;
-	background-color: #64a19d;
-	border-color: #64a19d;
+	background-color: #20c997;
+	border-color: #20c997;
 }
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
 	color: #fff;
-	background-color: #4f837f;
-	border-color: #4a7b78;
+	background-color: #148560;
+	border-color: #148560;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-	box-shadow: 0 0 0 0.2rem rgba(123, 175, 172, 0.5);
+	box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.5);
 }
 
 .btn-secondary {
@@ -2987,34 +2987,34 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-	color: #64a19d;
-	border-color: #64a19d;
+	color: #20c997;
+	border-color: #20c997;
 }
 .btn-outline-primary:hover {
-	color: #fff;
-	background-color: #64a19d;
-	border-color: #64a19d;
+	color: #212529;
+	background-color: #20c997;
+	border-color: #20c997;
 }
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-	box-shadow: 0 0 0 0.2rem rgba(100, 161, 157, 0.5);
+	box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.5);
 }
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-	color: #64a19d;
+	color: #20c997;
 	background-color: transparent;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
-	color: #fff;
-	background-color: #64a19d;
-	border-color: #64a19d;
+	color: #212529;
+	background-color: #20c997;
+	border-color: #20c997;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-	box-shadow: 0 0 0 0.2rem rgba(100, 161, 157, 0.5);
+	box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.5);
 }
 
 .btn-outline-secondary {
@@ -3267,11 +3267,11 @@ fieldset:disabled a.btn {
 
 .btn-link {
 	font-weight: 400;
-	color: #64a19d;
+	color: #20c997;
 	text-decoration: none;
 }
 .btn-link:hover {
-	color: #467370;
+	color: #148560;
 	text-decoration: underline;
 }
 .btn-link:focus,
@@ -10572,6 +10572,8 @@ a.text-black:focus {
 }
 body {
 	letter-spacing: 0.0625em;
+    font-family: 'Nunito', sans-serif; /* More modern font */
+    font-size: 1.1rem; /* Slightly larger font size for better readability */
 }
 
 #mainNav {
@@ -10744,7 +10746,7 @@ body {
 	}
 }
 .projects-section .project-text {
-	padding: 3rem;
+	padding: 0;
 	font-size: 90%;
 }
 @media (min-width: 992px) {
@@ -10826,4 +10828,38 @@ body {
 
 .footer {
 	padding: 5rem 0;
+}
+
+/* Custom styles for app showcase */
+.app-image {
+	max-width: 400px;
+	border-radius: 12px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Center projects section */
+.projects-section h2 {
+	margin-bottom: 2rem;
+}
+
+.app-image:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.app-download-btn {
+	padding: 0.75rem 1.5rem;
+	border-radius: 30px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	background-color: #20c997;
+	border-color: #20c997;
+}
+
+.app-download-btn:hover {
+	background-color: #1ba87e;
+	border-color: #1ba87e;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
